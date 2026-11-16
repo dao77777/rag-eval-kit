@@ -1,0 +1,19 @@
+{
+  "name": "rag-eval-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Small RAG evaluation harness: BM25 retrieval, citation checks, refusal tests, markdown report.",
+  "scripts": {
+    "demo": "node src/cli.ts",
+    "test": "node --test test/*.test.ts",
+    "check": "tsc -p tsconfig.json --noEmit && node --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
